@@ -1,681 +1,99 @@
-<!DOCTYPE html>
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-<html class="theme-next mist use-motion" lang="zh-CN">
-<head><meta name="generator" content="Hexo 3.8.0">
+<!doctype html>
+<html lang="zh-CN">
+<head>
   <meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
-<meta name="theme-color" content="#222">
-
-
-
-
-
-
-
-
-
-
-
-
-<meta http-equiv="Cache-Control" content="no-transform">
-<meta http-equiv="Cache-Control" content="no-siteapp">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
-
-<link href="/css/main.css?v=6.4.2" rel="stylesheet" type="text/css">
-
-
-  <link rel="apple-touch-icon" sizes="180x180" href="/favicon.ico?v=6.4.2">
-
-
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon.ico?v=6.4.2">
-
-
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon.ico?v=6.4.2">
-
-
-  <link rel="mask-icon" href="/favicon.ico?v=6.4.2" color="#222">
-
-
-
-
-
-
-
-
-
-<script type="text/javascript" id="hexo.configurations">
-  var NexT = window.NexT || {};
-  var CONFIG = {
-    root: '/',
-    scheme: 'Mist',
-    version: '6.4.2',
-    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
-    fancybox: false,
-    fastclick: false,
-    lazyload: false,
-    tabs: true,
-    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
-    algolia: {
-      applicationID: '',
-      apiKey: '',
-      indexName: '',
-      hits: {"per_page":10},
-      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
-    }
-  };
-</script>
-
-
-  
-
-
-
-
-  <meta name="description" content="晚起的虫儿~">
-<meta property="og:type" content="website">
-<meta property="og:title" content="ZFmY">
-<meta property="og:url" content="http://zfmy.github.io/index.html">
-<meta property="og:site_name" content="ZFmY">
-<meta property="og:description" content="晚起的虫儿~">
-<meta property="og:locale" content="zh-CN">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="ZFmY">
-<meta name="twitter:description" content="晚起的虫儿~">
-
-
-
-
-
-
-  <link rel="canonical" href="http://zfmy.github.io/">
-
-
-
-<script type="text/javascript" id="page.configurations">
-  CONFIG.page = {
-    sidebar: "",
-  };
-</script>
-
-  <title>ZFmY</title>
-  
-
-
-
-
-
-
-
-
-
-  <noscript>
-  <style type="text/css">
-    .use-motion .motion-element,
-    .use-motion .brand,
-    .use-motion .menu-item,
-    .sidebar-inner,
-    .use-motion .post-block,
-    .use-motion .pagination,
-    .use-motion .comments,
-    .use-motion .post-header,
-    .use-motion .post-body,
-    .use-motion .collection-title { opacity: initial; }
-
-    .use-motion .logo,
-    .use-motion .site-title,
-    .use-motion .site-subtitle {
-      opacity: initial;
-      top: initial;
-    }
-
-    .use-motion {
-      .logo-line-before i { left: initial; }
-      .logo-line-after i { right: initial; }
-    }
-  </style>
-</noscript>
-
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#e8c491">
+  <meta name="description" content="A cozy little cat lives inside this webpage and is waiting to play with you.">
+  <title>mofu · A Cat in the Web</title>
+  <link rel="stylesheet" href="css/main.css">
 </head>
-
-<body itemscope="" itemtype="http://schema.org/WebPage" lang="zh-CN">
-
-  
-  
-    
-  
-
-  <div class="container sidebar-position-left 
-  page-home">
-    <div class="headband"></div>
-
-    <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
-      <div class="header-inner"><div class="site-brand-wrapper">
-  <div class="site-meta ">
-    
-
-    <div class="custom-logo-site-title">
-      <a href="/" class="brand" rel="start">
-        <span class="logo-line-before"><i></i></span>
-        <span class="site-title">ZFmY</span>
-        <span class="logo-line-after"><i></i></span>
-      </a>
-    </div>
-    
-      
-        <p class="site-subtitle">Good Good Study,Day Day Up!</p>
-      
-    
-  </div>
-
-  <div class="site-nav-toggle">
-    <button aria-label="切换导航栏">
-      <span class="btn-bar"></span>
-      <span class="btn-bar"></span>
-      <span class="btn-bar"></span>
-    </button>
-  </div>
-</div>
-
-
-
-<nav class="site-nav">
-  
-    <ul id="menu" class="menu">
-      
-        
-        
-        
-          
-          <li class="menu-item menu-item-home menu-item-active">
-    <a href="/" rel="section">
-      <i class="menu-item-icon fa fa-fw fa-home"></i> <br>首页</a>
-  </li>
-        
-        
-        
-          
-          <li class="menu-item menu-item-archives">
-    <a href="/archives/" rel="section">
-      <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>归档</a>
-  </li>
-        
-        
-        
-          
-          <li class="menu-item menu-item-about">
-    <a href="/about/" rel="section">
-      <i class="menu-item-icon fa fa-fw fa-user"></i> <br>关于</a>
-  </li>
-
-      
-      
-    </ul>
-  
-
-  
-    
-
-  
-
-  
-</nav>
-
-
-
-  
-
-
-
-</div>
-    </header>
-
-    
-
-
-    <main id="main" class="main">
-      <div class="main-inner">
-        <div class="content-wrap">
-          
-          <div id="content" class="content">
-            
-  <section id="posts" class="posts-expand">
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://zfmy.github.io/2018/01/15/hello-world/">
-
-    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="ZFmY">
-      <meta itemprop="description" content="晚起的虫儿~">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="ZFmY">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/01/15/hello-world/" itemprop="url">
-                  Hello World
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-
-              
-                
-              
-
-              <time title="创建时间：2018-01-15 18:07:40" itemprop="dateCreated datePublished" datetime="2018-01-15T18:07:40+08:00">2018-01-15</time>
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>Welcome to <a href="https://zfmy.github.io/">ZFmY</a>! This is a try of blog. </p>
-<h3 id="MD是什么？好吃么？"><a href="#MD是什么？好吃么？" class="headerlink" title="MD是什么？好吃么？"></a>MD是什么？好吃么？</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ 我不知道写什么！！！</span><br></pre></td></tr></table></figure>
-
-          
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-  </section>
-
-  
-
-
-          </div>
-          
-
-        </div>
-        
-          
-  
-  <div class="sidebar-toggle">
-    <div class="sidebar-toggle-line-wrap">
-      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
-      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
-      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
-    </div>
-  </div>
-
-  <aside id="sidebar" class="sidebar">
-    
-    <div class="sidebar-inner">
-
-      
-
-      
-
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
-        <div class="site-overview">
-          <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-            
-              <p class="site-author-name" itemprop="name">ZFmY</p>
-              <p class="site-description motion-element" itemprop="description">晚起的虫儿~</p>
-          </div>
-
-          
-            <nav class="site-state motion-element">
-              
-                <div class="site-state-item site-state-posts">
-                
-                  <a href="/archives/">
-                
-                    <span class="site-state-item-count">1</span>
-                    <span class="site-state-item-name">日志</span>
-                  </a>
-                </div>
-              
-
-              
-
-              
-            </nav>
-          
-
-          
-
-          
-            <div class="links-of-author motion-element">
-              
-                <span class="links-of-author-item">
-                  <a href="https://github.com/zfmy" target="_blank" title="GitHub"><i class="fa fa-fw fa-github"></i>GitHub</a>
-                  
-                </span>
-              
-                <span class="links-of-author-item">
-                  <a href="https://twitter.com/cjskyer" target="_blank" title="Twitter"><i class="fa fa-fw fa-twitter"></i>Twitter</a>
-                  
-                </span>
-              
-            </div>
-          
-
-          
-          
-
-          
-          
-
-          
-            
-          
-          
-
-        </div>
-      </section>
-
-      
-
-      
-
-    </div>
-  </aside>
-
-
-        
+<body>
+  <main class="room" id="room" data-time="day" data-scene="room" data-fur="orange" aria-label="An interactive cozy cat living inside a webpage">
+    <div class="grain" aria-hidden="true"></div>
+    <div class="sunbeam sunbeam-one" aria-hidden="true"></div>
+    <div class="sunbeam sunbeam-two" aria-hidden="true"></div>
+    <div class="motes" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
+
+    <section class="backdrop" aria-hidden="true">
+      <div class="wall-wash"></div>
+      <div class="window">
+        <div class="window-sky"><span class="sun"></span><span class="moon"></span><span class="star star-a"></span><span class="star star-b"></span><span class="star star-c"></span></div>
+        <div class="window-view"><span class="hill hill-back"></span><span class="hill hill-front"></span><span class="tree tree-left"></span><span class="tree tree-right"></span></div>
+        <div class="window-frame frame-vertical"></div><div class="window-frame frame-horizontal"></div>
+        <div class="curtain curtain-left"></div><div class="curtain curtain-right"></div>
+        <div class="window-sill"><span class="vase"></span><span class="sill-line"></span></div>
       </div>
-    </main>
 
-    <footer id="footer" class="footer">
-      <div class="footer-inner">
-        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
-  <span class="with-love" id="animate">
-    <i class="fa fa-snowflake-o"></i>
-  </span>
-  <span class="author" itemprop="copyrightHolder">ZFmY</span>
+      <div class="wall-art"><span class="art-sun"></span><span class="art-hill"></span><span class="art-stem"></span><span class="art-leaf"></span></div>
 
-  
-
-  
-</div>
-
-
-
-
-
-
-
-
-  <div class="theme-info">主题 – <a class="theme-link" target="_blank" href="https://theme-next.org">NexT.Mist</a></div>
-
-
-
-
-        
-
-
-
-
-
-
-
-
-        
+      <div class="shelf">
+        <div class="shelf-top"><span class="tiny-plant"><i></i><i></i><b></b></span><span class="basket"></span><span class="ceramic-cat"></span></div>
+        <div class="shelf-body"><span class="book book-one"></span><span class="book book-two"></span><span class="book book-three"></span><span class="book book-four"></span><span class="book book-five"></span><span class="pottery"></span></div>
       </div>
-    </footer>
 
-    
-      <div class="back-to-top">
-        <i class="fa fa-arrow-up"></i>
-        
-      </div>
-    
-
-    
-	
-    
-
-    
-  </div>
-
-  
-
-<script type="text/javascript">
-  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
-    window.Promise = null;
-  }
-</script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
-  
-
-
-  
-
-
-  <script type="text/javascript" src="/js/src/utils.js?v=6.4.2"></script>
-
-  <script type="text/javascript" src="/js/src/motion.js?v=6.4.2"></script>
-
-
-
-  
-  
-
-  
-
-  
-
-
-  <script type="text/javascript" src="/js/src/bootstrap.js?v=6.4.2"></script>
-
-
-
-  
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-  
-
-  
-
-  
-
-  
-
-  
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
+      <div class="plant"><span class="plant-pot"></span><i class="leaf leaf-one"></i><i class="leaf leaf-two"></i><i class="leaf leaf-three"></i><i class="leaf leaf-four"></i><i class="leaf leaf-five"></i></div>
+      <div class="cushion"><span></span><i></i><i></i><i></i></div>
+      <div class="sofa"><span class="sofa-back"></span><span class="sofa-arm"></span><span class="sofa-seat"></span></div>
+      <div class="garden-branch"><i></i><i></i><i></i><i></i><b></b></div>
+    </section>
+
+    <section class="floor" aria-hidden="true">
+      <div class="floor-shadow"></div>
+      <div class="rug"><span class="rug-line line-one"></span><span class="rug-line line-two"></span><span class="rug-line line-three"></span><span class="rug-fringe"></span></div>
+      <div class="floor-sparkle sparkle-one">✦</div><div class="floor-sparkle sparkle-two">✦</div>
+    </section>
+
+    <div class="cat-wrap" id="catWrap">
+      <svg class="cat" id="cat" viewBox="0 0 520 560" role="img" aria-label="A fluffy interactive cat">
+        <defs>
+          <filter id="softShadow" x="-40%" y="-40%" width="180%" height="190%"><feGaussianBlur stdDeviation="12"></feGaussianBlur></filter>
+          <radialGradient id="furLight" cx="35%" cy="28%" r="70%"><stop offset="0" stop-color="#fff3cf" stop-opacity=".74"></stop><stop offset="1" stop-color="#fff3cf" stop-opacity="0"></stop></radialGradient>
+          <linearGradient id="earInner" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#ffc4ad"></stop><stop offset="1" stop-color="#e78678"></stop></linearGradient>
+        </defs>
+        <ellipse class="cat-ground-shadow" cx="260" cy="526" rx="142" ry="25"></ellipse>
+        <g class="cat-body-group">
+          <path class="tail" d="M154 440 C76 462 82 535 147 523 C188 516 189 477 158 468 C131 460 126 490 146 492" fill="none" stroke-width="40" stroke-linecap="round"></path>
+          <path class="tail-highlight" d="M151 438 C91 465 96 519 144 516" fill="none" stroke-width="9" stroke-linecap="round"></path>
+          <path class="body" d="M166 300 C129 341 125 432 165 495 C188 531 326 541 362 494 C393 452 384 340 346 300 C308 260 204 260 166 300Z"></path>
+          <path class="body-light" d="M184 312 C158 365 161 445 188 487 C218 512 306 517 339 487 C354 452 348 359 327 315 C298 286 211 285 184 312Z"></path>
+          <path class="chest" d="M216 342 C193 386 199 468 242 499 C276 513 316 489 320 447 C324 401 298 355 270 336 C249 326 230 330 216 342Z"></path>
+          <path class="chest-fluff" d="M239 363 C224 392 228 453 260 479 C288 462 297 412 280 370 C271 353 250 349 239 363Z"></path>
+          <path class="leg leg-left" d="M181 420 C165 452 171 511 211 517 C236 520 239 500 233 472 L223 425Z"></path>
+          <path class="leg leg-right" d="M296 425 L286 475 C280 504 290 520 315 517 C356 511 358 454 342 420Z"></path>
+          <path class="paw paw-left" d="M182 486 C177 513 190 532 219 529 C241 526 244 510 232 494 C219 479 194 477 182 486Z"></path>
+          <path class="paw paw-right" d="M288 494 C276 510 279 526 301 529 C330 532 343 513 338 486 C326 477 301 479 288 494Z"></path>
+        </g>
+        <g class="cat-head-group">
+          <path class="ear ear-left" d="M160 187 C153 113 167 67 198 52 C224 84 244 116 253 151Z"></path>
+          <path class="ear-inner ear-inner-left" d="M178 130 C172 96 177 78 192 69 C207 91 218 111 225 133Z"></path>
+          <path class="ear ear-right" d="M267 151 C275 116 297 82 328 51 C356 70 367 122 356 190Z"></path>
+          <path class="ear-inner ear-inner-right" d="M294 133 C303 108 315 88 328 70 C345 87 349 107 345 140Z"></path>
+          <path class="head" d="M165 153 C195 112 294 101 349 151 C389 187 386 270 350 315 C317 357 210 359 170 312 C129 263 130 200 165 153Z"></path>
+          <path class="head-light" d="M184 155 C221 128 291 125 330 157 C350 185 347 261 322 296 C289 331 220 332 185 298 C164 265 163 190 184 155Z"></path>
+          <path class="forehead-mark mark-one" d="M249 133 L231 181" fill="none" stroke-width="13" stroke-linecap="round"></path>
+          <path class="forehead-mark mark-two" d="M271 131 L274 178" fill="none" stroke-width="12" stroke-linecap="round"></path>
+          <path class="forehead-mark mark-three" d="M293 139 L311 180" fill="none" stroke-width="11" stroke-linecap="round"></path>
+          <path class="calico-patch patch-one" d="M165 178 C181 142 209 126 235 127 C219 159 211 200 214 236 C188 225 173 208 165 178Z"></path>
+          <path class="calico-patch patch-two" d="M313 132 C342 145 361 168 365 201 C345 215 327 218 309 206 C321 180 320 153 313 132Z"></path>
+          <ellipse class="eye eye-left" cx="211" cy="216" rx="32" ry="37"></ellipse><ellipse class="eye eye-right" cx="307" cy="216" rx="32" ry="37"></ellipse>
+          <ellipse class="eye-shine" cx="201" cy="203" rx="8" ry="11"></ellipse><ellipse class="eye-shine eye-shine-two" cx="298" cy="203" rx="8" ry="11"></ellipse>
+          <ellipse class="pupil pupil-left" cx="214" cy="221" rx="11" ry="20"></ellipse><ellipse class="pupil pupil-right" cx="310" cy="221" rx="11" ry="20"></ellipse>
+          <path class="muzzle" d="M220 257 C236 244 283 244 300 257 C307 274 298 302 260 308 C222 302 213 274 220 257Z"></path>
+          <path class="nose" d="M249 258 Q260 250 271 258 Q269 272 260 276 Q251 272 249 258Z"></path>
+          <path class="mouth" d="M260 275 Q248 292 231 284 M260 275 Q272 292 289 284" fill="none" stroke-width="4" stroke-linecap="round"></path>
+          <path class="whisker" d="M215 270 C180 260 157 263 139 273 M216 283 C179 283 158 291 145 306 M305 270 C340 260 362 263 381 273 M304 283 C342 283 363 291 376 306" fill="none" stroke-width="3" stroke-linecap="round"></path>
+          <path class="blush" d="M183 265 C195 258 207 261 212 271 M308 271 C314 261 326 258 337 265" fill="none" stroke-width="7" stroke-linecap="round"></path>
+        </g>
+        <g class="curious-paw"><path d="M355 374 C393 361 420 377 414 408 C409 431 385 440 365 425 C350 413 343 389 355 374Z"></path><path class="paw-pad" d="M383 393 C390 391 394 398 392 404 C389 410 381 409 378 404 C375 399 378 395 383 393Z"></path></g>
+        <path class="sleep-line sleep-line-one" d="M368 184 Q387 172 400 184" fill="none" stroke-width="4" stroke-linecap="round"></path><path class="sleep-line sleep-line-two" d="M378 163 Q392 154 402 165" fill="none" stroke-width="3" stroke-linecap="round"></path>
+      </svg>
+    </div>
+
+    <div class="wand" id="wand" aria-hidden="true"><span class="wand-stick"></span><span class="wand-thread"></span><span class="wand-feather"><i></i><i></i><i></i><b></b></span></div>
+    <p class="whisper" id="whisper">Gently wave the cat wand and stay awhile</p>
+    <p class="sr-only" id="catStatus" aria-live="polite">The cat is watching you</p>
+  </main>
+  <script src="js/cat-room.js"></script>
 </body>
 </html>
